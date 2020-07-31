@@ -34,9 +34,10 @@ function CarroselFilmes({
           return (
             <SliderItem key={video.name}>
               <VideoCard
-                videoTitle={video.titulo}
+                videoTitle={video.name}
                 videoURL={video.url}
                 categoryColor={categoryColor}
+                img={video.tvg.logo}
               />
             </SliderItem>
           );

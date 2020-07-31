@@ -16,11 +16,11 @@ export default function BannerMain({
   url,
   logo,
 }) {
-  const youTubeID = getYouTubeId(url);
-  const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  // const youTubeID = getYouTubeId(url);
+  //const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer backgroundImage={logo || bgUrl}>
+    <BannerMainContainer backgroundImage={logo}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
           <ContentAreaContainer.Title>
@@ -35,6 +35,7 @@ export default function BannerMain({
         <ContentAreaContainer.Item>
           <VideoIframeResponsive
             url={url}
+            logo={logo}
           />
           <WatchButton>
             Assistir
