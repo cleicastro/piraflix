@@ -8,10 +8,14 @@ import BannerMain from '../../components/BannerMain';
 import CarroselFilmes from '../../components/Carousel/CarroselFilmes';
 import Footer from '../../components/Footer';
 
+const categorys = filmes.reduce((p, c) => {
+    p[c['group'].title] = [...p[c['group'].title] || [], c];
+    return p;
+}, []);
 
 function Home() {
     const [search, setSearch] = useState(null);
-    const [categorys, setCategorys] = useState(
+    /* const [categorys, setCategorys] = useState(
         filmes.reduce((p, c) => {
             p[c['group'].title] = [...p[c['group'].title] || [], c];
             return p;
@@ -37,7 +41,7 @@ function Home() {
                 return p;
             }, []))
         }
-    }, [search]);
+    }, [search]); */
 
 
     return (
