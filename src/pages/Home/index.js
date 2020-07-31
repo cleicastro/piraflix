@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Menu from '../../components/Menu';
 //import dadosIniciais from '../../data/dados_iniciais.json';
-import filmes from '../../data/filmes.json';
+import filmes from '../../data/filmes_3.json';
 import BannerMain from '../../components/BannerMain';
 //import Carousel from '../../components/Carousel';
 import CarroselFilmes from '../../components/Carousel/CarroselFilmes';
