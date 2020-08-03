@@ -1,6 +1,6 @@
 import React from 'react';
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
-import VideoCard from './components/VideoCardURL';
+import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
 function CarroselFilmes({
@@ -37,7 +37,7 @@ function CarroselFilmes({
                 videoTitle={video.name}
                 videoURL={video.url}
                 categoryColor={categoryColor}
-                img={video.tvg.logo}
+                image={video.tvg.logo}
               />
             </SliderItem>
           );
